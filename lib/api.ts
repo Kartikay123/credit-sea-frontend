@@ -1,7 +1,8 @@
 'use client';
 
 export const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+  process.env.NEXT_PUBLIC_API_URL ||
+  'https://credit-sea-backend-9rgw.onrender.com/api';
 
 function getToken(): string | null {
   if (typeof window === 'undefined') return null;
